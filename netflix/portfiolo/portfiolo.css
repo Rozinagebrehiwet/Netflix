@@ -1,0 +1,153 @@
+* {
+	font-family: "open sans" , sans-serif;
+}
+
+
+body {
+	margin: 0 auto;
+
+
+}
+
+.large-container {
+	min-height: 100vh;
+	background: url("../images/woman_coder_1.jpg");
+    background-size: cover;
+}
+
+
+.sidebar-container {
+	width: 250px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	background: #fb7304;
+}
+
+.pra-1 {
+	font-size: 20px;
+	font-weight: bolder;
+/*	color: gray;*/
+	color: white;
+	text-transform: uppercase;
+}
+
+.un {
+	margin-left: 7px;
+	font-family: Dubai;
+	text-transform: capitalize;
+}
+#id {
+	/*margin-left:2px ;*/
+	font-family: Candara;
+	text-transform: lowercase;
+}
+
+.profile-container {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 2px solid  darkblue;
+	margin-top: 5%;
+}
+
+.profile-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-size: cover;
+	object-position: center;
+	object-fit: cover;
+}
+.anchors-container {
+	padding-left: 10px;
+
+
+}
+
+.anchors-container img {
+	width: 20px;
+}
+
+.anchors-container a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 17px;
+	margin: 5px;
+	transition-property: color 1s ease;
+}
+
+.anchors-container a:hover {
+	color: darkblue;
+}
+
+.anchors-container p{
+	width: 196px;
+	padding: 7px;
+	margin-top: 5px;
+}
+
+.anchors-container p:hover {
+	border-right: 3px solid blue;
+	color: blue;
+}
+.active {
+	border-right: 3px solid  blue;
+}
+
+.ending-icons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ending-icons img{
+	width: 30px;
+	margin: 8px;
+
+
+}
+
+
+.large-container {
+	display: flex;
+	min-height: 100vh;
+}
+
+
+.text-container {
+	width: 450px;
+	height: 250px;
+	color: #fff;
+	margin-left: 3%;
+	margin-top: 20%;
+	outline: 3px solid white;
+	padding: 0 100px 0 40px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3) ,rgba(0, 0, 0, 0.6));
+	outline-offset: -5px;
+}
+
+.text-container p{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 28px;
+	color: darkorange;
+	/*color: inherit;*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+body {
+    background: #efeafe;
+}
+
+.grid-container {
+    width: 1200px;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(200px,auto);
+    gap: 20px;
+}
+
+.boxes {
+    border-radius: 8px;
+    position: relative;
+    padding: 25px 30px 40px 30px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.25);
+
+}
+
+.boxes:nth-child(1) {
+    grid-column: 1/span 2;
+    background: purple;
+    /*position: relative;*/
+    color: white;
+}
+
+.boxes:nth-child(1) .logo {
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 80%;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.header .image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 2.5px solid #07cd48;
+    margin-right: 23px;
+}
+
+.header .image-container
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-container {
+    margin-top: 20px;
+}
+
+.profile-container
+.profile {
+    font-size: 18px;
+    text-transform: capitalize;
+    opacity: 90%;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.profile-container
+.job {
+    opacity: 70%;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.quote {
+    font-size: 16px;
+    opacity: 60%;
+    margin-bottom: 4%;
+
+}
+
+.quote-description {
+    /*color: white;*/
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 90%;
+
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 80%;
+    opacity: 70%;
+    font-style: italic;
+    font-size: 14px;
+
+}
+
+.boxes:nth-child(2) {
+    grid-column: 3/span 1;
+    background: #1a333f;
+    color: white;
+}
+
+.boxes:nth-child(3) {
+    grid-column: 4/span 1;
+    grid-row: 1/span 2;
+    /*color: black;*/
+    background: white;
+    color: black;
+
+}
+
+.boxes:nth-child(4) {
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    color: black;
+    background: white;
+
+}
+
+.boxes:nth-child(5) {
+    grid-column: 2/span 2;
+    grid-row: 2/span 1;
+    color: white;
+    background: rgba(0,0,0,0.9);
+
+}
+
+.boxes:nth-child(6) {
+    grid-column: 1/span 4;
+    color: white;
+    background: #1a333f;
+
+}
+
+.boxes:nth-child(6) .logo {
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 90%;
+}
+
+.boxes:nth-child(6)
+.header {
+    margin-bottom: 10px;
+}
+
+.boxes:nth-child(6)
+.quote  {
+    margin-bottom: 10px;
+}
+
+.boxes:nth-child(6)
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+}
+
+.boxes:nth-child(2) .footer,
+.boxes:nth-child(3) .footer,
+.boxes:nth-child(4) .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 60%;
+}
