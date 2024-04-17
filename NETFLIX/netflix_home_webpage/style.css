@@ -1,0 +1,146 @@
+ * {
+    padding: 0;
+    margin: 0;
+    font-family: Dubai;
+}
+:root {
+    --background: rgba(0, 0, 0, 0.4);
+    --border: 2px solid red;
+    --shadow: 0 0 100px 0 red, -1px 0 100px 0 red;
+    --gradient: linear-gradient(to right, rgba(0,0,255,0.3) , rgba(0,0,255,0.7));
+}
+html {
+    height: 100vh;
+}
+
+body {
+    background: var(--gradient), url("../images/netflix-2.jpg") no-repeat ;
+    background-size: cover;
+
+}
+
+.large_circle {
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*header goes here*/
+
+.main-heading-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 100px;
+}
+
+#logo {
+    width: 100%;
+    height: 80px;
+}
+
+.main-heading-menu nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 24px;
+}
+
+.main-heading-menu nav {
+    margin-right: 5%;
+}
+
+.main-heading-menu nav ul li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: "Cooper Black";
+}
+
+.main-heading-menu nav ul li a:hover {
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+
+}
+/*header ends here*/
+
+.circle-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: var(--background);
+    box-shadow: var(--shadow);
+}
+
+.circle-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    align-items: center;
+    background: var(--background);
+}
+
+.circle-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: var(--background);
+}
+
+.profile-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: var(--border);
+
+}
+
+.profile-circle
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+button {
+    padding: 13px 10%;
+    border-radius: 8px;
+    font-size: 17px;
+    color: white;
+    background: rgba(255,0,0,0.9);
+    border: 2px blue;
+    font-family:  "Cooper Black" ;
+    text-transform: uppercase;
+    box-shadow: 0 0 100px 0 red, -1px 0 100px 0 red;
+}
+
+button:hover {
+    background: transparent;
+    border: 1px solid blue;
+    /*color: blue;*/
+    font-weight: bolder;
+
+}
