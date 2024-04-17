@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background: var(--gradient), url("../images/netflix-2.jpg") no-repeat ;
+    background: var(--gradient), url("images/netflix-2.jpg") no-repeat ;
     background-size: cover;
 
 }
